@@ -140,3 +140,9 @@ p {
 .hidden {
   display: none;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
