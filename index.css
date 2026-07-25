@@ -1,0 +1,142 @@
+:root {
+  --White: hsl(0, 100%, 100%);
+  --Grey-500: hsl(217, 12%, 63%);
+  --Grey-800: hsl(213, 19%, 25%);
+  --Grey-900: hsl(213, 19%, 18%);
+  --Grey-950: hsl(216, 12%, 8%);
+  --Orange-500: hsl(25, 97%, 53%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+button {
+  font: inherit;
+  border: none;
+  cursor: pointer;
+}
+body {
+  font-family: overpass, sans-serif;
+  background-color: var(--Grey-950);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 23rem;
+}
+
+.card {
+  padding: 1.5rem;
+  background-color: var(--Grey-900);
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.star {
+  background-color: var(--Grey-800);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  color: var(--White);
+}
+p {
+  color: var(--Grey-500);
+}
+.ratings {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.rating-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--Grey-800);
+  color: var(--White);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+.rating-btn:hover {
+  background-color: var(--Orange-500);
+  color: var(--Grey-950);
+}
+
+.rating-btn:focus-visible {
+  outline: 2px solid var(--Orange-500);
+  outline-offset: 2px;
+}
+
+.rating-btn.active,
+.rating-btn.active:hover {
+  background-color: var(--White);
+  color: var(--Grey-950);
+}
+
+.submit {
+  background-color: var(--Orange-500);
+  color: black;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  width: 100%;
+  padding: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  transition: background-color 0.2s ease;
+}
+
+.submit:hover {
+  background-color: var(--White);
+}
+
+.hidden {
+  display: none;
+}
+
+.thank-you-state {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.rating-summary {
+  color: var(--Orange-500);
+  background-color: var(--Grey-800);
+  border-radius: 999px; /* pill mai hmesha ye*/
+  padding: 0.35rem 0.9rem;
+}
+
+.thank-you {
+  color: var(--White);
+  font-size: 1.3rem;
+}
+
+.thank-you-text {
+  text-align: center;
+  font-size: 0.8rem;
+}
