@@ -112,10 +112,6 @@ p {
   background-color: var(--White);
 }
 
-.hidden {
-  display: none;
-}
-
 .thank-you-state {
   display: flex;
   flex-direction: column;
@@ -139,4 +135,8 @@ p {
 .thank-you-text {
   text-align: center;
   font-size: 0.8rem;
+}
+
+.hidden {
+  display: none;
 }
